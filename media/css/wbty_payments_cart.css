@@ -1,0 +1,15 @@
+.wbty-cart {color: #fff; text-align: center;}
+.wbty-cart .total-surround {background: #676772;}
+.wbty-cart .total-surround a {color: #fff; display: block; margin: 0 auto; padding: 0 10px;}
+	.wbty-cart .total-surround a:hover {text-shadow: 0 0 5px rgba(255,255,255,.2);}
+.total-surround .cart,
+.total-surround .total {float: left; padding: 5px 0;}
+.total-surround .cart {width: 20%; background: #414146; transition: background .2s; -webkit-transition: background .2s; -moz-transition: background .2s;}
+	.total-surround .cart:hover {background: #525256;}
+.total-surround .total {width: 80%; font-size: .85em;}
+.total-surround .total p {margin: 0 auto;}
+.wbty-cart .checkout {}
+.checkout .checkout-button {padding: 2px 10px; text-transform: uppercase; background: #EDA400; color: #fff; display: block; margin: 0 auto; font-weight: bold; border-radius: 0 0 3px 3px; -webkit-border-radius: 0 0 3px 3px; -moz-border-radius: 0 0 3px 3px; font-size: .8em; letter-spacing: .2em; transition: background .2s; -webkit-transition: background .2s; -moz-transition: background .2s;}
+	.checkout .checkout-button:hover {background: #EA8000;}
+.checkout .checkout-button i {position: relative; transition: margin .2s;}
+	.checkout .checkout-button:hover i {margin-right: -10px; margin-left: 10px;}

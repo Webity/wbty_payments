@@ -1,0 +1,43 @@
+
+<extension type="module" version="1.7" client="site" method="upgrade">
+  <name>WBTY Payments</name>
+  <creationDate>October 21, 2012</creationDate>
+  <author>David Fritsch</author>
+  <authorEmail>david@makethewebwork.com</authorEmail>
+  <authorUrl>http://makethewebwork.com</authorUrl>
+  <copyright>2012 Fritsch Services</copyright>
+  <license>All Rights Reserved</license>
+  <version>0.3</version>
+  <description>A module to add an item to your cart in wbty payments.</description>
+  <files>
+    <filename module="mod_wbty_payments">mod_wbty_payments.php</filename>
+	<folder module="mod_wbty_payments">tmpl</folder>
+  </files>
+  <config>
+    <fields name="params">
+	  <fieldset name="basic" label="Basic">
+		<field type="text" name="name" label="Item Name" default="" description="Name of the item" class="" size="" />
+		<field type="text" name="description" label="Item Description" default="" description="Description for the item" class="" size="" />
+		<field type="text" name="price" label="Item Price" default="" description="Item's price in US Dollars with no dollar sign" class="" size="" filter="float" />
+		<field type="text" name="id" label="Item ID" default="" description="ID Number for the item" class="" size="" />
+		<field type="text" name="button" label="Button Text" default="Add to Cart" description="Text on button to add item to cart" class="" size="" />
+		<field type="list" name="require_login" label="Require Login" default="0" description="Require user to be logged in or have an account before purchase can be completed.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field type="list" name="allow_subscription" label="Allow Subscriptions" default="0" description="Allow users to opt that there payment recur monthly. Best used for donations.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+	  </fieldset>
+	  
+	  <fieldset name="advanced" label="Advanced">
+		<field type="text" name="callback_file" label="Callback File" default="" description="File to load upon a change in payment status (i.e. after payment)" class="" size="" />
+		<field type="text" name="callback_function" label="Callback Function" default="" description="Function within file specified above to call after change in payment status. (Can either be a global function or method of a class specified as Classname::method.)" class="" size="" />
+		<field type="text" name="callback_id" label="Callback ID" default="" description="ID item to pass to funtion above." class="" size="" />
+		<field type="text" name="redirect_url" label="Redirect URL" default="" description="Adding a URL here generates a button on the thank you page allowing the customer to access the item that was just purchased." class="" size="" />
+		<field type="text" name="redirect_text" label="Redirect Text" default="" description="Text for button that has the URL from above." class="" size="" />
+	  </fieldset>
+    </fields>
+  </config>
+</extension>

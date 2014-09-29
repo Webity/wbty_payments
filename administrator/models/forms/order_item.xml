@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="order_item">
+        <fieldset name="order_item">
+
+            <field name="id" type="hidden" default="0" class="id" /> 
+    
+		<field type="text" label="COM_WBTY_PAYMENTS_FORM_LBL_ORDER_ITEMS_PRICE" name="price" size="" default="" description="COM_WBTY_PAYMENTS_FORM_DESC_ORDER_ITEMS_PRICE" filter="safehtml" required="true" class="default_col" />
+		<field type="text" label="COM_WBTY_PAYMENTS_FORM_LBL_ORDER_ITEMS_ITEM_NAME" name="item_name" size="" default="" description="COM_WBTY_PAYMENTS_FORM_DESC_ORDER_ITEMS_ITEM_NAME" class="" filter="safehtml" required="true" />
+		<field type="text" label="COM_WBTY_PAYMENTS_FORM_LBL_ORDER_ITEMS_ITEM_DESC" name="item_desc" size="" default="" description="COM_WBTY_PAYMENTS_FORM_DESC_ORDER_ITEMS_ITEM_DESC" class="" filter="safehtml" />
+		<field type="text" label="COM_WBTY_PAYMENTS_FORM_LBL_ORDER_ITEMS_ITEM_ID" name="item_id" size="" default="" description="COM_WBTY_PAYMENTS_FORM_DESC_ORDER_ITEMS_ITEM_ID" class="" filter="safehtml" />
+		<field type="hidden" name="callback_file" default="" class="" />
+		<field type="hidden" name="callback_function" default="" class="" />
+		<field type="hidden" name="callback_id" default="" class="" />
+		<field type="text" label="COM_WBTY_PAYMENTS_FORM_LBL_ORDER_ITEMS_REDIRECT_URL" name="redirect_url" size="" default="" description="COM_WBTY_PAYMENTS_FORM_DESC_ORDER_ITEMS_REDIRECT_URL" class="" filter="safehtml" />
+		<field type="text" label="COM_WBTY_PAYMENTS_FORM_LBL_ORDER_ITEMS_REDIRECT_TEXT" name="redirect_text" size="" default="" description="COM_WBTY_PAYMENTS_FORM_DESC_ORDER_ITEMS_REDIRECT_TEXT" class="" filter="safehtml" />
+		<field type="text" label="COM_WBTY_PAYMENTS_FORM_LBL_ORDER_ITEMS_RECURRING" name="recurring" size="" default="" description="COM_WBTY_PAYMENTS_FORM_DESC_ORDER_ITEMS_RECURRING" class="" filter="safehtml" />
+		<field name="order_id" type="hidden" filter="integer" class="parent_id" />
+
+            <field name="state" type="hidden" default="1" /> 
+
+            <field name="checked_out" type="hidden" filter="unset" />
+            <field name="checked_out_time" type="hidden" filter="unset" />
+            
+            <field name="modified_by" type="hidden" filter="integer" overwrite="true" />
+            <field name="modified_time" type="hidden" filter="safehtml" overwrite="true" />
+
+        </fieldset>
+    </fields>
+
+
+
+</form>

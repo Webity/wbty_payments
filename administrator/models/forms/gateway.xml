@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="gateway">
+        <fieldset name="gateway">
+
+            <field name="id" type="hidden" default="0" class="id" /> 
+    
+		<field type="text" label="COM_WBTY_PAYMENTS_FORM_LBL_GATEWAYS_NAME" name="name" size="" default="" description="COM_WBTY_PAYMENTS_FORM_DESC_GATEWAYS_NAME" filter="safehtml" required="true" class="default_col" />
+		<field type="text" label="COM_WBTY_PAYMENTS_FORM_LBL_GATEWAYS_ALIAS" name="alias" size="" default="" description="COM_WBTY_PAYMENTS_FORM_DESC_GATEWAYS_ALIAS" class="" filter="safehtml" />
+		
+		<field
+			name="default_gateway"
+			type="radio"
+			label="COM_WBTY_PAYMENTS_FORM_LBL_GATEWAYS_DEFAULT_GATEWAY"
+			description="COM_WBTY_PAYMENTS_FORM_DESC_GATEWAYS_DEFAULT_GATEWAY"
+			default="0"
+			class="inputbox"
+			filter="integer">
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+		
+		<field name="type" type="list"
+                
+            label="COM_WBTY_PAYMENTS_FORM_LBL_GATEWAYS_TYPE"
+            description="COM_WBTY_PAYMENTS_FORM_DESC_GATEWAYS_TYPE"
+			default="1">
+			<option value="0">Sandbox (Test)</option>
+			<option value="1">Live</option>
+		</field>
+		
+		
+            <field name="state" type="hidden" default="1" /> 
+
+            <field name="checked_out" type="hidden" filter="unset" />
+            <field name="checked_out_time" type="hidden" filter="unset" />
+            
+            <field name="modified_by" type="hidden" filter="integer" overwrite="true" />
+            <field name="modified_time" type="hidden" filter="safehtml" overwrite="true" />
+
+        </fieldset>
+    </fields>
+
+
+	<fieldset name="gateway_field" loadForm="gateway_field"></fieldset>
+
+</form>

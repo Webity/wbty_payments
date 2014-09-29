@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
+.pagination {margin: 10px 0;padding: 10px 0 10px 0px;}
+.pagination ul {list-style-type: none;margin: 0;padding: 0;text-align: left;}
+.pagination li {display: inline;padding: 2px 5px;text-align: left;border: solid 1px #eee;margin: 0 2px;}
+.pagination li.pagination-start, .pagination li.pagination-next, .pagination li.pagination-end, .pagination li.pagination-prev {border: 0;}
+.pagination li.pagination-start, .pagination li.pagination-start span {padding: 0;}
+p.counter {font-weight: bold;}
+.component-content li .pagenav {padding: 5px 10px; }

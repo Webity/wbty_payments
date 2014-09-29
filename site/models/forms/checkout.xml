@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="fields">
+		<field type="text" label="First Name" name="firstName" description="Please enter the card holder's first name" filter="safehtml" required="true" />
+		<field type="text" label="Last Name" name="lastName" description="Please enter the card holder's first name" filter="safehtml" required="true" />
+		<field type="text" label="Email" name="email" description="Please enter your email" filter="safehtml" required="true" />
+		<field type="list" label="Credit Card Type" name="creditCardType" description="Please select the credit card type" filter="safehtml" required="true">
+			<option value="Visa">Visa</option>
+			<option value="MasterCard">MasterCard</option>
+			<!--<option value="Discover">Discover</option>-->
+			<!--<option value="Amex">American Express</option>-->
+		</field>
+		<field type="text" label="Credit Card Number" name="creditCardNumber" description="Please enter the credit card number" filter="safehtml" required="true" />
+		<field type="list" label="Expiration Month" name="expDateMonth" description="Please select the credit card's expiration month" filter="safehtml" required="true">
+			<option value="1">01</option>
+			<option value="2">02</option>
+			<option value="3">03</option>
+			<option value="4">04</option>
+			<option value="5">05</option>
+			<option value="6">06</option>
+			<option value="7">07</option>
+			<option value="8">08</option>
+			<option value="9">09</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+		</field>
+		<field type="expyear" label="Expiration Year" name="expDateYear" description="Please select the credit card's expiration year" filter="safehtml" required="true" />
+		<field type="text" label="CCV Number" name="cvv2Number" description="Please enter the credit card verification number" filter="safehtml" required="true" />
+		<field type="text" label="Street 1" name="address1" description="Please enter the card holder's address information" filter="safehtml" required="true" />
+		<field type="text" label="Street 2" name="address2" description="Please enter the card holder's address information" filter="safehtml" />
+		<field type="text" label="City" name="city" description="Please enter the card holder's city of residence" filter="safehtml" required="true" />
+		<field type="text" label="State/Province" name="state" description="Please select the card holder's state of residence" filter="safehtml" required="true" />
+		<!--<field type="list" label="State/Province" name="state" description="Please select the card holder's state of residence" filter="safehtml" required="true">
+			<option value=""></option>
+			<option value="AK">AK</option>
+			<option value="AL">AL</option>
+			<option value="AR">AR</option>
+			<option value="AZ">AZ</option>
+			<option value="CA">CA</option>
+			<option value="CO">CO</option>
+			<option value="CT">CT</option>
+			<option value="DC">DC</option>
+			<option value="DE">DE</option>
+			<option value="FL">FL</option>
+			<option value="GA">GA</option>
+			<option value="HI">HI</option>
+			<option value="IA">IA</option>
+			<option value="ID">ID</option>
+			<option value="IL">IL</option>
+			<option value="IN">IN</option>
+			<option value="KS">KS</option>
+			<option value="KY">KY</option>
+			<option value="LA">LA</option>
+			<option value="MA">MA</option>
+			<option value="MD">MD</option>
+			<option value="ME">ME</option>
+			<option value="MI">MI</option>
+			<option value="MN">MN</option>
+			<option value="MO">MO</option>
+			<option value="MS">MS</option>
+			<option value="MT">MT</option>
+			<option value="NC">NC</option>
+			<option value="ND">ND</option>
+			<option value="NE">NE</option>
+			<option value="NH">NH</option>
+			<option value="NJ">NJ</option>
+			<option value="NM">NM</option>
+			<option value="NV">NV</option>
+			<option value="NY">NY</option>
+			<option value="OH">OH</option>
+			<option value="OK">OK</option>
+			<option value="OR">OR</option>
+			<option value="PA">PA</option>
+			<option value="RI">RI</option>
+			<option value="SC">SC</option>
+			<option value="SD">SD</option>
+			<option value="TN">TN</option>
+			<option value="TX">TX</option>
+			<option value="UT">UT</option>
+			<option value="VA">VA</option>
+			<option value="VT">VT</option>
+			<option value="WA">WA</option>
+			<option value="WI">WI</option>
+			<option value="WV">WV</option>
+			<option value="WY">WY</option>
+			<option value="AA">AA</option>
+			<option value="AE">AE</option>
+			<option value="AP">AP</option>
+			<option value="AS">AS</option>
+			<option value="FM">FM</option>
+			<option value="GU">GU</option>
+			<option value="MH">MH</option>
+			<option value="MP">MP</option>
+			<option value="PR">PR</option>
+			<option value="PW">PW</option>
+			<option value="VI">VI</option>
+		</field>-->
+		<field type="text" label="Zip/Postal Code" name="zip" description="Please enter the card holder's zip code" filter="safehtml" required="true" />
+		<field type="text" label="Country" name="country" description="Please select card holder's country of residence." filter="safehtml" default="USA" required="true" />
+		<!--<field type="list" label="Country" name="country" description="Please select card holder's country of residence." filter="safehtml" default="USA" required="true">
+			<option value="USA">United States</option>
+		</field>-->
+		
+		<field
+			name="shipping_different"
+			type="radio"
+			label="Shipping Address"
+			description="If your shipping address is different from your billing address, please indicate so."
+			default="0"
+			filter="integer">
+			<option
+				value="0">Same as billing address.</option>
+			<option
+				value="1">Add another address.</option>
+		</field>
+		
+		<field type="text" label="Street 1" name="shipping_address1" description="Please enter your shipping address" filter="safehtml" />
+		<field type="text" label="Street 2" name="shipping_address2" description="Please enter any extra shipping address information" filter="safehtml" />
+		<field type="text" label="City" name="shipping_city" description="Please enter the city where we will be shipping to" filter="safehtml" />
+		<field type="text" label="State/Province" name="shipping_state" description="Please select the state where we will be shipping to" filter="safehtml" />
+		<!--<field type="list" label="State/Province" name="shipping_state" description="Please select the state where we will be shipping to" filter="safehtml" >
+			<option value=""></option>
+			<option value="AK">AK</option>
+			<option value="AL">AL</option>
+			<option value="AR">AR</option>
+			<option value="AZ">AZ</option>
+			<option value="CA">CA</option>
+			<option value="CO">CO</option>
+			<option value="CT">CT</option>
+			<option value="DC">DC</option>
+			<option value="DE">DE</option>
+			<option value="FL">FL</option>
+			<option value="GA">GA</option>
+			<option value="HI">HI</option>
+			<option value="IA">IA</option>
+			<option value="ID">ID</option>
+			<option value="IL">IL</option>
+			<option value="IN">IN</option>
+			<option value="KS">KS</option>
+			<option value="KY">KY</option>
+			<option value="LA">LA</option>
+			<option value="MA">MA</option>
+			<option value="MD">MD</option>
+			<option value="ME">ME</option>
+			<option value="MI">MI</option>
+			<option value="MN">MN</option>
+			<option value="MO">MO</option>
+			<option value="MS">MS</option>
+			<option value="MT">MT</option>
+			<option value="NC">NC</option>
+			<option value="ND">ND</option>
+			<option value="NE">NE</option>
+			<option value="NH">NH</option>
+			<option value="NJ">NJ</option>
+			<option value="NM">NM</option>
+			<option value="NV">NV</option>
+			<option value="NY">NY</option>
+			<option value="OH">OH</option>
+			<option value="OK">OK</option>
+			<option value="OR">OR</option>
+			<option value="PA">PA</option>
+			<option value="RI">RI</option>
+			<option value="SC">SC</option>
+			<option value="SD">SD</option>
+			<option value="TN">TN</option>
+			<option value="TX">TX</option>
+			<option value="UT">UT</option>
+			<option value="VA">VA</option>
+			<option value="VT">VT</option>
+			<option value="WA">WA</option>
+			<option value="WI">WI</option>
+			<option value="WV">WV</option>
+			<option value="WY">WY</option>
+			<option value="AA">AA</option>
+			<option value="AE">AE</option>
+			<option value="AP">AP</option>
+			<option value="AS">AS</option>
+			<option value="FM">FM</option>
+			<option value="GU">GU</option>
+			<option value="MH">MH</option>
+			<option value="MP">MP</option>
+			<option value="PR">PR</option>
+			<option value="PW">PW</option>
+			<option value="VI">VI</option>
+		</field>-->
+		<field type="text" label="Zip/Postal Code" name="shipping_zip" description="Please enter the zip code of the city we will ship to" filter="safehtml" />
+		<field type="text" label="Country" name="shipping_country" description="Please select the country where this shipping address resides" filter="safehtml" default="USA" />
+		<!--<field type="list" label="Country" name="shipping_country" description="Please select the country where this shipping address resides" filter="safehtml" default="USA" >
+			<option value="USA">United States</option>
+		</field>-->
+		
+	</fieldset>
+</form>

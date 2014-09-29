@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="library" method="upgrade" version="1.7.0">
+    <name>Wbty Payments Library</name>
+    <libraryname>wbtypayments</libraryname>
+    <author>Webity</author>
+    <creationDate>November 2012</creationDate>
+    <copyright>Copyright (C) 2012</copyright>
+    <license>
+    http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+    </license>
+    <authorEmail>david@makethewebwork.com</authorEmail>
+    <authorUrl>www.makethewebwork.com.com</authorUrl>
+    <version>1.0</version>
+    <description> 
+    Webity Payments library
+    </description>
+
+    <files>
+        <folder>amazon</folder>
+        <file>common.php</file>
+        <file>wbtypayments.php</file>
+    </files>
+</extension>

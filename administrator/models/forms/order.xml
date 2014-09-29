@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="order">
+        <fieldset name="order">
+
+            <field name="id" type="hidden" default="0" class="id" /> 
+    
+		<field type="text" label="COM_WBTY_PAYMENTS_FORM_LBL_ORDERS_USER_ID" name="user_id" default="" description="COM_WBTY_PAYMENTS_FORM_DESC_ORDERS_USER_ID" required="true" class="default_col" />
+		<field type="list" label="COM_WBTY_PAYMENTS_FORM_LBL_ORDERS_PAID" name="paid" default="0" description="COM_WBTY_PAYMENTS_FORM_DESC_ORDERS_PAID" class="">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </field>
+		<field type="sql" label="COM_WBTY_PAYMENTS_FORM_LBL_ORDERS_GATEWAY" name="gateway" query="SELECT id, name FROM #__wbty_payments_gateways WHERE state=1 ORDER BY ordering" value_field="name" key_field="id" default="" description="COM_WBTY_PAYMENTS_FORM_DESC_ORDERS_GATEWAY" />
+		<field type="text" label="COM_WBTY_PAYMENTS_FORM_LBL_ORDERS_TOTAL_AMOUNT" name="total_amount" size="" default="" description="COM_WBTY_PAYMENTS_FORM_DESC_ORDERS_TOTAL_AMOUNT" class="" filter="safehtml" />
+		<field type="calendar" label="COM_WBTY_PAYMENTS_FORM_LBL_ORDERS_ORDER_DATE" name="order_date" default="" description="COM_WBTY_PAYMENTS_FORM_DESC_ORDERS_ORDER_DATE" class="" format="" filter="safehtml" />
+		<field type="modalsql" label="COM_WBTY_PAYMENTS_FORM_LBL_ORDERS_COUPON" name="coupon" query="SELECT id, name FROM #__wbty_payments_coupons WHERE state=1 ORDER BY ordering" key_field="id" value_field="name" default="" description="COM_WBTY_PAYMENTS_FORM_DESC_ORDERS_COUPON" add_modal_new="true" modal_com_name="com_wbty_payments" modal_view_name="coupon">
+            <option></option>
+        </field>
+		<field type="text" label="COM_WBTY_PAYMENTS_FORM_LBL_ORDERS_COUPON_AMOUNT" name="coupon_amount" size="" default="" description="COM_WBTY_PAYMENTS_FORM_DESC_ORDERS_COUPON_AMOUNT" class="" filter="safehtml" />
+
+            <field name="state" type="hidden" default="1" /> 
+
+            <field name="checked_out" type="hidden" filter="unset" />
+            <field name="checked_out_time" type="hidden" filter="unset" />
+            
+            <field name="modified_by" type="hidden" filter="integer" overwrite="true" />
+            <field name="modified_time" type="hidden" filter="safehtml" overwrite="true" />
+
+        </fieldset>
+    </fields>
+
+
+	<fieldset name="order_item" loadForm="order_item"></fieldset>
+
+</form>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="user_account">
+	</layout>
+	<fields
+		name="request"
+		addfieldpath="/administrator/components/com_job_board/models/fields"
+	>
+		<fieldset name="request">
+			<field
+				name="id"
+				type="sql"
+				label="COM_ARTGALLERY_PIECE_FIELD_PIECE_LABEL"
+				description="COM_ARTGALLERY_PIECE_FIELD_PIECE_DESC"
+			/>
+		</fieldset>
+	</fields>
+</metadata>
+

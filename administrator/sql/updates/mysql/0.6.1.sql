@@ -1,0 +1,2 @@
+# Update order item descriptions to better contain long descriptions with HTML;
+ALTER TABLE `#__wbty_payments_order_items` CHANGE `item_desc` `item_desc` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;

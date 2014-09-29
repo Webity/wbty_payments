@@ -1,0 +1,22 @@
+
+<extension type="module" version="1.7" client="site" method="upgrade">
+  <name>WBTY Payments Cart View</name>
+  <creationDate>October 21, 2012</creationDate>
+  <author>David Fritsch</author>
+  <authorEmail>david@makethewebwork.com</authorEmail>
+  <authorUrl>http://makethewebwork.com</authorUrl>
+  <copyright>2012 Fritsch Services</copyright>
+  <license>All Rights Reserved</license>
+  <version>0.3</version>
+  <description>A module to view items in your cart in wbty payments.</description>
+  <files>
+    <filename module="mod_wbtypayments_cart">mod_wbtypayments_cart.php</filename>
+	<folder module="mod_wbtypayments_cart">tmpl</folder>
+  </files>
+  <config>
+    <fields name="params">
+	  <fieldset name="basic" label="Basic">
+	  </fieldset>
+    </fields>
+  </config>
+</extension>

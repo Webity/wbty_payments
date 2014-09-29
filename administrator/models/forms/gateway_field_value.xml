@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="gateway_field_value">
+        <fieldset name="gateway_field_value">
+
+            <field name="id" type="hidden" default="0" class="id" /> 
+    
+		<field type="text" label="COM_WBTY_PAYMENTS_FORM_LBL_GATEWAY_FIELD_VALUES_GATEWAY_LINK_ID" name="gateway_link_id" size="" default="" description="COM_WBTY_PAYMENTS_FORM_DESC_GATEWAY_FIELD_VALUES_GATEWAY_LINK_ID" class="" filter="safehtml" required="true" class="default_col" />
+		<field type="text" label="COM_WBTY_PAYMENTS_FORM_LBL_GATEWAY_FIELD_VALUES_VALUE" name="value" size="" default="" description="COM_WBTY_PAYMENTS_FORM_DESC_GATEWAY_FIELD_VALUES_VALUE" class="" filter="safehtml" required="true" />
+
+            <field name="state" type="hidden" default="1" /> 
+
+            <field name="checked_out" type="hidden" filter="unset" />
+            <field name="checked_out_time" type="hidden" filter="unset" />
+            
+            <field name="modified_by" type="hidden" filter="integer" overwrite="true" />
+            <field name="modified_time" type="hidden" filter="safehtml" overwrite="true" />
+
+        </fieldset>
+    </fields>
+
+
+
+</form>

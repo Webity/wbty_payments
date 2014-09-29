@@ -1,0 +1,1 @@
+# Placeholder file for future updates to the database schema
