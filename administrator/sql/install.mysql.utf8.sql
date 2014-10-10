@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS `#__wbty_payments_coupons` (
   `modified_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `name` varchar(255) NOT NULL,
   `discount` varchar(255) NOT NULL,
-  `discount_type` int(ii) NOT NULL,
+  `discount_type` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
