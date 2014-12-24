@@ -209,7 +209,7 @@ JFactory::getDocument()->addScriptDeclaration($script);
 						</td>
 
 						<td>
-							<?php echo number_format($item->coupon_amount, 2); ?>
+							<?php echo number_format(floatval($item->coupon_amount), 2); ?>
 						</td>
 
 				<td>
